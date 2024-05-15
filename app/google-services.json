@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "14386541986",
+    "firebase_url": "https://saglikapp-fbd9b-default-rtdb.firebaseio.com",
+    "project_id": "saglikapp-fbd9b",
+    "storage_bucket": "saglikapp-fbd9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14386541986:android:3adee1209901c257f8aefb",
+        "android_client_info": {
+          "package_name": "com.keremboz.saglikapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_lfeu8kmNpqe91sXpmZPh4jqgkleeiOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

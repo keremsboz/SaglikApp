@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ilacGoruntule">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/firstscreenbackground" />
+
+    <TextView
+        android:id="@+id/firstScreenTitle2"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="25dp"
+        android:text="Hangi İlacı Sorgulamak İstiyorsunuz?"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/ilacSorgulaEditText"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Sorgulamak İstediğiniz İlacı Giriniz"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstScreenTitle2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="203dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="198dp"
+        android:text="Alerjen İlaçlar;"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/firstScreenBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilacSorgulaButton" />
+
+    <Button
+        android:id="@+id/ilacSorgulaButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="ilacSorgula"
+        android:text="Sorgula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ilacSorgulaEditText" />
+
+    <ScrollView
+        android:layout_width="382dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="395dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        tools:layout_editor_absoluteX="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alerjenMaddelerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

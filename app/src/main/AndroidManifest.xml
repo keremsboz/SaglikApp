@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SaglikApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ilacSorgulama"
+            android:exported="false" />
+        <activity
+            android:name=".kediAsiTakvimi"
+            android:exported="false" />
+        <activity
+            android:name=".kopekAsiTakvimi"
+            android:exported="false" />
+        <activity
+            android:name=".bebekAsiTakvimi"
+            android:exported="false" />
+        <activity
+            android:name=".AsiTakvimi"
+            android:exported="false" />
+        <activity
+            android:name=".haplarimEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".doktorHastaEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".doktorGirisYapEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".kategorilerEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".girisYapEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".ilacGoruntule"
+            android:exported="true" />
+        <activity
+            android:name=".ilacEkleme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ilacEkrani"
+            android:exported="false" />
+        <activity
+            android:name=".kayitOlEkrani"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ilkSayfa"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
